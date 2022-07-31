@@ -1,0 +1,38 @@
+<div id="third-site" class="third-site">
+    <div class="h2-container">
+        <h2>MY work</h2>
+    </div>
+    <div class="project-btn-container">
+        <div><button class="bg-primary"  (click)="switchToAll()" id="all_btn">All</button></div>
+        <div><button id="angular_btn" (click)="switchToAngular()">Angular</button></div>
+        <div><button (click)="switchToJavaScript()" id="javascript_btn">Java Script</button></div>
+    </div>
+    <div class="project-picture-container">
+        <div  class="project-box"  (mouseover)="mouseover('first-project')" (mouseleave)="mouseleave('first-project')">
+            <div   id="first-project" class="project_descripton d-none">
+                <div><span class="nameOfProject">El Pollo Loco</span><span>JavaScript - based jump and run
+                        game.</span><button>Try out</button></div>
+            </div><img src="./assets/img/1.jpg">
+        </div>
+        <div class="project-box" (mouseover)="mouseover('second-project')" (mouseleave)="mouseleave('second-project')">
+            <div id="second-project" class="project_descripton d-none">
+                <div><span class="nameOfProject">El Pollo Loco</span><span>JavaScript - based jump and run
+                        game.</span><button>Try out</button></div>
+            </div><img src="./assets/img/2.jpg">
+        </div>
+    
+    
+        <div class="project-box" (mouseover)="mouseover('third-project')" (mouseleave)="mouseleave('third-project')">
+            <div id="third-project" class="project_descripton d-none">
+                <div><span class="nameOfProject">El Pollo Loco</span><span>JavaScript - based jump and run
+                        game.</span><button>Try out</button></div>
+            </div><img src="./assets/img/3.jpg">
+        </div>
+        <div class="project-box" (mouseover)="mouseover('fourth-project')" (mouseleave)="mouseleave('fourth-project')">
+            <div id="fourth-project" class="project_descripton d-none">
+                <div><span class="nameOfProject">El Pollo Loco</span><span>JavaScript - based jump and run
+                        game.</span><button>Try out</button></div>
+            </div><img src="./assets/img/4.jpg">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,137 @@
+.fourth-site {
+    height: 100vh;
+    width: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.me-img-container {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: #FA2759;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 300px;
+        width: 300px;
+        object-fit: contain;
+        border-radius: 100%;
+
+    }
+}
+
+.description {
+    display: flex;
+    height: 450px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #2DFCD8;
+   
+
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.span {
+    max-width: 400px;
+}
+
+.headline-description {
+    margin-left: 100px;
+}
+
+.icon-div {
+    height: 40px;
+    width: 40px;
+    background-color: #2DFCD8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 20px;
+
+    img {
+        height: 30px;
+    }
+}
+
+.way-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 20px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        span {
+            margin-top: 20px;
+        }
+    }
+    
+
+}
+
+@media (max-width: 970px) {
+   .description {
+    height: unset;
+    border: 0px;
+    flex-direction: column;
+   }
+
+   .headline-description {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 40px;
+   }
+
+   .fourth-site {
+    height: unset;
+   }
+   .way-div {
+    flex-direction: column;
+    margin-top: 40px;
+    div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    span {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+   }
+   .me-img-container {
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
+   }
+    }
+
+    @media (max-width: 1200px){
+        .fourth-site {
+            height: unset;
+        }
+    }

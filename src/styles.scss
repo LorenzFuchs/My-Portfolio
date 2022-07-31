@@ -1,4 +1,23 @@
 body {
-    background-color: black;
     margin: 0;
+}
+
+html, body { 
+    height: 100%;
+    scroll-behavior: smooth; 
+
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.h2-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    
+    h2 {
+        font-size: 36px;
+        color: white;
+    }
 }

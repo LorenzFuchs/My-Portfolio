@@ -1,8 +1,26 @@
 <header>
-    <img src="assets/img/logo.png">
     <div>
-        <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">PORTFOLIO</a>
+        <img routerLink="/" src="assets/img/logo2.png">
     </div>
+    
+    <div class="navigation">
+        <a routerLink="/">HOME</a>
+        <a href="#fourth-site">ABOUT</a>
+        <a href="#third-site">PORTFOLIO</a>
+    </div>
+    <button mat-icon-button [matMenuTriggerFor]="beforeMenu" aria-label="Example icon-button with a menu">
+        <mat-icon>drag_handle</mat-icon>
+      </button>
+      <mat-menu #beforeMenu="matMenu" xPosition="before">
+        <button mat-menu-item>
+            <a routerLink="/">HOME</a>
+        </button>
+        <button mat-menu-item>
+            <a href="#fourth-site">ABOUT</a>
+        </button>
+        <button mat-menu-item>
+            <a href="#third-site">PORTFOLIO</a>
+        </button>
+      </mat-menu>
+    
 </header>

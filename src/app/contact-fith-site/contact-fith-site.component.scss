@@ -1,0 +1,132 @@
+.fith-site {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form {
+    width: 700px;
+    min-width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.contact-me {
+    color: #2DFCD8;
+    font-size: 72px;
+    font-weight: bold;
+
+}
+
+.mailing {
+    color: white;
+    margin-top: 60px;
+    font-size: 20px;
+    
+    a{
+        color: #2DFCD8;
+        text-decoration: none;
+    }
+}
+
+.contact-me-div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    color: white;
+    background-color: #1a1a1a;
+    margin-top: 20px;
+    border: 0px solid transparent;
+    padding: 10px;
+    font-size: 20px;
+
+    &:focus {
+        border: 1px solid #2DFCD8;
+        outline: none;
+       
+    }
+    
+    &:invalid:focus {
+        border: 1px solid #fa2759;
+    }
+    
+}
+
+
+
+textarea {
+    resize: none;
+    background-color: #1a1a1a;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    color: white;
+    height: 200px;
+
+    &:focus {
+        border: 1px solid #2DFCD8;
+        outline: none;
+    }
+
+    &:invalid:focus {
+        border: 1px solid #fa2759;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+
+    label{
+        color: white;
+        font-size: 20px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+}
+
+.contact-me-btn-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: unset !important;
+}
+
+    button {
+        height: 50px;
+        width: 200px;
+        color: #2DFCD8;
+        border: 1px solid #2DFCD8;
+        background-color: unset;
+        cursor: pointer;
+        font-size: 20px;
+
+        &:hover {
+            color: white;
+            background-color: #2DFCD8;
+        }
+    }
+
+    @media (max-width:450px){
+        .contact-me {
+            white-space: nowrap;
+            font-size: 32px;
+
+            
+        }
+        .contact-me-div {
+            margin-top: 30px;
+            
+        }
+    }

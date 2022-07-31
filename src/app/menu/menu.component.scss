@@ -1,13 +1,14 @@
 header {
-    height: 80px;
-    padding-left: 120px;
-    padding-right: 120px;
+    background-color: black;
+    height: 20vh;
+    padding-left: 240px;
+    padding-right: 240px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     img {
-        height: 50px;
+        height: 75px;
         cursor: pointer;
     }
 
@@ -15,8 +16,53 @@ header {
         color: white;
         text-decoration: none;
         margin-left: 32px;
+        font-size: 20px;
         &:hover {
             color: #FA2759;
         }
     }
 }
+
+button {
+    text-align: end;
+    a {
+        text-decoration: none !important;
+        color: white;
+    }
+}
+
+::ng-deep.mat-menu-panel {
+    background-color: black !important;
+    display: none;
+}
+mat-icon {
+    color: white;
+    font-size: 30px !important;
+}
+
+.mat-icon-button {
+    display: none;
+}
+
+@media (max-width: 970px) {
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    }
+    @media (max-width: 600px) {
+        header {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .navigation {
+            display: none;
+        }
+        .mat-icon-button {
+            display: unset;
+        }
+        ::ng-deep.mat-menu-panel {
+            
+            display: unset;
+        }
+        }
