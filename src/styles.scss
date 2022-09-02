@@ -10,11 +10,12 @@ html, body {
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .h2-container {
-    position: absolute;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 50px;
+    
     
     h2 {
         font-size: 36px;

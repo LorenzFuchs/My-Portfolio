@@ -1,5 +1,4 @@
 .third-site {
-    height: 100vh;
     background-color: black;
     width: 100%;
     position: relative;
@@ -15,7 +14,6 @@
     display: flex;
     justify-content: center;
     height: 70px;
-    margin-top: 120px;
     margin-bottom: 20px;
 
 
@@ -42,32 +40,36 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width: 70%;
-    
+    margin-bottom: 50px;
+
     div {
         position: relative;
     }
 
-    img{
-        
+    img {
+
         height: 100%;
         width: 100%;
         object-fit: cover;
+        object-position: bottom
 
-        
-    };
+
+    }
+
+    ;
 
     span {
         margin-top: 20px;
-        
+
     }
 
 
-    
+
 }
 
 .project-box {
     max-height: 300px;
-    max-width:500px;
+    max-width: 500px;
     margin: 10px;
 }
 
@@ -83,7 +85,7 @@
     height: 100%;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.85);
-    
+
     div {
         display: flex;
         flex-direction: column;
@@ -93,6 +95,7 @@
     span {
         text-align: center;
     }
+
     button {
         height: 50px;
         width: 100px;
@@ -103,12 +106,12 @@
         font-size: 15px;
         margin-top: 30px;
 
-        &:hover  {
+        &:hover {
             color: white;
             background-color: #FA2759;
         }
     }
-    
+
 }
 
 .nameOfProject {
@@ -125,18 +128,38 @@
     .third-site {
         height: unset;
     }
+
     .project-picture-container {
         margin-bottom: 30px;
     }
 }
+
 @media (max-width: 515px) {
     .project-btn-container {
-       
+
         button {
-           
+
             width: 100px;
-            
+
         }
-        
+
+    }
+}
+
+@media (max-width: 370px) {
+    .project-btn-container {
+        button {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+    }
+
+    .project_descripton {
+        button {
+            height: 30px;
+            width: 70px;
+            margin-top: 0;
+        }
     }
 }

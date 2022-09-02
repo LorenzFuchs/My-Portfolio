@@ -41,7 +41,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
 
         $subject = "Contact From " . $_POST['name'];
         $object = "E-Mail address, " . $_POST['email_address'];
-        $headers = "From:  noreply@developerakademie.com";
+        $headers = "From:  lorenz-fuchs.de";
 
 
         mail($recipient, $subject,$object, $_POST['message'], $headers);

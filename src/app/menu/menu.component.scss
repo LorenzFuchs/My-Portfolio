@@ -1,8 +1,9 @@
 header {
     background-color: black;
-    height: 20vh;
+    min-height: 20vh;
     padding-left: 240px;
     padding-right: 240px;
+    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +33,7 @@ button {
 }
 
 ::ng-deep.mat-menu-panel {
-    background-color: black !important;
+    background-color: unset;
     display: none;
 }
 mat-icon {
